@@ -1,0 +1,10 @@
+2026-07-03 10:15:12 INFO Request received POST /users request_id=7ab45de user_id=42
+2026-07-03 10:15:13 INFO User authenticated request_id=7ab45de
+2026-07-03 10:15:13 INFO SQL INSERT users request_id=7ab45de duration=45ms
+2026-07-03 10:15:14 INFO Kafka Event Published request_id=7ab45de
+2026-07-03 10:15:15 INFO Response 201 request_id=7ab45de duration=3.2s
+2026-07-03 10:16:01 INFO Request received GET /orders request_id=b91fd02
+2026-07-03 10:16:02 WARN Redis cache miss request_id=b91fd02
+2026-07-03 10:16:03 ERROR TimeoutException upstream orders service request_id=b91fd02
+{"timestamp":"2026-07-03T10:17:00Z","level":"INFO","request_id":"json-1","trace_id":"trace-abc","logger":"api.PaymentController","message":"POST /payments"}
+{"timestamp":"2026-07-03T10:17:01Z","level":"ERROR","request_id":"json-1","message":"SQLException deadlock detected"}
